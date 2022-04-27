@@ -97,6 +97,9 @@ a:hover, .page-footer a:hover {
     .page-header img{
         width: 80%;
     }
+    .page-footer {
+        background-color: blue;
+    }
     .flex-item-right, .flex-item-left {
         flex: 100%;
     }
