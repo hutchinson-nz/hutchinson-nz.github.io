@@ -2,34 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title "Haukai Restaurant Staff"></title>
     <link rel="stylesheet" href="../styles/styles.css">
   </head>
-  
-  <body>
-    <div id="page-container">
-      <div id="content-wrap">
-        <!-- I have used the nav HTML semantic element for the navigation menu -->
-        <nav class="navbar">
-          <img src="../images/HaukaiLogo.svg" alt="Haukai Restaurant Logo" width="40%;">
-            <ul class="nav-list">
-              <li class="list-item"><a href="../index.html">Home</a></li>
-              <li class="list-item"><a href="../pages/Menu.html">Menu</a></li>
-              <li class="list-item"><a href="../pages/Reservations.html">Reservations</a></li>
-              <li class="list-item"><a href="../pages/Contacts.html">Contact</a></li>
-            </ul>
-        </nav>
 
-        <div class="flex-container">
-          <div class="flex-item-left"><h1>Time Table</h1><iframe src="https://calendar.google.com/calendar/embed?height=550&wkst=1&bgcolor=%23ffffff&ctz=Pacific%2FAuckland&src=YTBzcmhwZWdlYjUzbGszOXB1ZXEzcWU0ZWtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23009688" style="border:solid 0px #777" width="100%" height="570" frameborder="0" scrolling="no"></iframe></div>
-          <div class="flex-item-right"><img src="../images/Buffet_lunch_at_restaurant_Amar.jpg" alt="Picture of food at a resturant" width="100%"></div>   
-        </div>
+  <body>
+    <div class="header">
+      <img src="../images/HaukaiLogo.svg" alt="Haukai Logo" class="center">
+    </div>
     
-        <footer id="footer">
-          Copyright Craig Hutchinson, BIT607 Assignment 2, 2022
-          <a href="../pages/Privacy.html" target="_blank">Our Privacy Policy</a>
-        </footer>
+    <div class="row">
+      <div class="menu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../pages/Menu.html">Menu</a></li>
+          <li><a href="../pages/Reservations.html">Reservations</a></li>
+          <li><a href="../pages/Contacts.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-6"><iframe src="https://calendar.google.com/calendar/embed?height=550&wkst=1&bgcolor=%23ffffff&ctz=Pacific%2FAuckland&src=YTBzcmhwZWdlYjUzbGszOXB1ZXEzcWU0ZWtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23009688" style="border:solid 0px #777" width="100%" height="570" frameborder="0" scrolling="no"></iframe></div>
+      <div class="col-6"><img src="../images/Buffet_lunch_at_restaurant_Amar.jpg" alt="Picture of food at a resturant" width="100%"></div>   
+    </div>
+    
+    <div class="footer">
+      <div class="col-6">
+        <p><a href="../pages/Privacy.html" target="_blank">Our Privacy Policy</a></p>
+      </div>
+      <div class="col-6">
+        <p>Copyright – Craig Hutchinson, BIT607 Assignment 2, 2022</p>
       </div>
     </div>
   </body>

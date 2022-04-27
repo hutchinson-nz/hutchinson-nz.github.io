@@ -1,171 +1,97 @@
-/* Universal box sizing */
 * {
     box-sizing: border-box;
 }
-
-body {
-    padding: 5px;
-    height: 100vh;
-    margin: 0;
-}
-
-.page-wrap {
-   height: calc(100vh - 10px);
-   display: grid;
-   grid-template-columns: minmax(10px, 1fr) minmax(10px, 3fr);
-   grid-template-rows: min-content min-content 1fr min-content;
-   gap: 1px;
- 
-    > * {
-     padding: 1rem;
-     text-align: center;
-   }
- 
-   @media (max-width: 600px) {
-     grid-template-columns: 100%;
-     grid-template-rows: auto;
-     
-    > * {
-       grid-column: 1 / -1 !important;
-       grid-row: auto !important;
-     }
-   }
- }
-
-#footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2.5rem;  /* Footer height */
+  
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
 }
   
-#footer, #footer a {
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+  
+html {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1vw;
-    color: rgb(112, 112, 112);
-    text-align: left;
-    padding-left: 1.5vw; 
 }
-    
-/* Style the navigation bar and footer elements */
-.navbar {
+  
+.header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: .5vw;
-    margin-right: .5vw;;
+    color: #ffffff;
+    padding: 15px;
 }
-
-.menu-nav {
+  
+.menu ul {
     display: flex;
-    justify-content:center;
-    align-items: center;
-}
-
-.mennav-item, .men-navitems {
-    display: inline-block;
-    padding: 30px 40px;
-}
-
-/* Style the lists by removing the bullets */
-.nav-list, .mennav-list, .menulist {
+    justify-content: center;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
-
-/* Style the navigation list items */
-.nav-list .list-item {
-    display: inline-block;
-    padding: 2vw 1vw;
-}
-
-/* Style the navbar links */
-a {
-    color:  rgb(112, 112, 112);
-    font-family: Arial, Helvetica, sans-serif;
+  
+.menu li, .menu li a {
     font-size: 1.5vw;
+    padding: 0 8px 0 8px;
+    margin-bottom: 7px;
+    color: rgb(112, 112, 112);
+}
+
+.menu li a {
     text-decoration: none;
 }
 
-/* mouse over link */
-a:hover, #footer a:hover {
+.menu li a:hover, .footer .col-6 a:hover {
     color: rgb(104, 0, 0);
 }
-
-.menulist {
-    padding-top: .5vw;
-    padding-bottom: 1.5vw;
-}
-
-.menuitem {
-    color:  rgb(112, 112, 112);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5vw;
+  
+.footer .col-6, .footer .col-6 a {
+    color: rgb(112, 112, 112);
     text-align: center;
-    padding: .3vw;
-}
-/*.activepage a {
-    color:  rgb(104, 0, 0);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5vw;
-}*/
-
-h1 {
-    color:  rgb(104, 0, 0);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5vw;
-    text-align: center;
-    padding: .5%;
+    font-size: 1vw;
+    padding: 5px;
+    text-decoration: none
 }
 
-p, .priv-item{
-    color:  rgb(112, 112, 112);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2vw;
-    padding: .5%;
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
-
-.priv-item {
-    font-style: italic;
-}
-
-iframe {
+  
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+  
+@media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+    .header img {
     width: 100%;
-    margin: 10px;
+    height: auto;
 }
-
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 30px;
-    text-align: center;
-    align-items: center;
-}
-  
-.flex-item-left, .flex-item-right {
-    padding: 10px;
-    flex: 50%;
-}
-
-.flex-item-left img {
-    padding: 10px;
-}
-  
-/* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media (max-width: 800px) {
-    .flex-item-right, .flex-item-left {
-      flex: 100%;
+    .footer .col-6, .footer .col-6 a {
+        font-size: 3vw;
+        padding: 0;
     }
-    .menuitem, #footer, #footer a {
-        font-size: 2.5vw;
-    }
-    h1 {
+    .menu li a {
         font-size: 4vw;
     }
-    .list-item a, p, .priv-item {
-        font-size: 3vw;
+    .menu li a {
+        text-decoration: none;
     }
-    .mennav-list a, .mennav-item {
-        font-size: 3vw;
-        padding: 6vw 1vw;
-    }
-} 
+}

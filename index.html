@@ -3,29 +3,32 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title "Test"></title>
-    <link rel="stylesheet" href="./styles/teststyle.css">
+    <title "Haukai Restaurant"></title>
+    <link rel="stylesheet" href="./styles/styles.css">
   </head>
+  
   <body>
-
     <div class="header">
       <img src="./images/HaukaiLogo.svg" alt="Haukai Logo" class="center">
     </div>
     
     <div class="row">
-      <div class="col-4 menu">
+      <div class="menu">
         <ul>
-          <li>Menu</li>
-          <li>Reservations</li>
-          <li>Contact</li>
-          <li>Staff</li>
+          <li><a href="./pages/Menu.html">Menu</a></li>
+          <li><a href="./pages/Reservations.html">Reservations</a></li>
+          <li><a href="./pages/Contacts.html">Contact</a></li>
+          <li><a href="./pages/Staff.html">Staff</a></li>
         </ul>
       </div>
     </div>
 
     <div class="row">
       <div>
-          <img src="./images/HeroPicTall.jpg" width="100%">
+        <picture>
+          <source srcset="./images/HeroPicTall.jpg" alt="Picture of restaurant" media="(max-width: 600px)">
+          <img src="./images/HeroPicWide.jpg" alt="Picture of restaurant" width="100%">
+        </picture>
       </div>
     </div>
     
