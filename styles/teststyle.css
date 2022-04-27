@@ -55,7 +55,7 @@ html {
     color: rgb(112, 112, 112);
     text-align: center;
     font-size: 1vw;
-    padding: 15px;
+    padding: 5px;
     text-decoration: none
 }
 
@@ -84,5 +84,9 @@ html {
     /* For mobile phones: */
     [class*="col-"] {
       width: 100%;
+    }
+    .footer .col-6, .footer .col-6 a {
+        font-size: 3vw;
+        padding: 0;
     }
 }
