@@ -85,6 +85,10 @@ html {
     [class*="col-"] {
       width: 100%;
     }
+    .header img {
+    width: 100%;
+    height: auto;
+}
     .footer .col-6, .footer .col-6 a {
         font-size: 3vw;
         padding: 0;
