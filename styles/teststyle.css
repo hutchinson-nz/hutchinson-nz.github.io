@@ -38,7 +38,7 @@ html {
     color: rgb(112, 112, 112);
 }
 
-.menu li:hover {
+.menu li:hover, .footer .col-6 a:hover {
     color: rgb(104, 0, 0);
 }
   
@@ -52,7 +52,6 @@ html {
 }
   
 .footer .col-6, .footer .col-6 a {
-    background-color: rgb(104, 0, 0);
     color: rgb(112, 112, 112);
     text-align: center;
     font-size: 1vw;
