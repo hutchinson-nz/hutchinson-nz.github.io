@@ -1,0 +1,171 @@
+/* Universal box sizing */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 5px;
+    height: 100vh;
+    margin: 0;
+}
+
+.page-wrap {
+   height: calc(100vh - 10px);
+   display: grid;
+   grid-template-columns: minmax(10px, 1fr) minmax(10px, 3fr);
+   grid-template-rows: min-content min-content 1fr min-content;
+   gap: 1px;
+ 
+    > * {
+     padding: 1rem;
+     text-align: center;
+   }
+ 
+   @media (max-width: 600px) {
+     grid-template-columns: 100%;
+     grid-template-rows: auto;
+     
+    > * {
+       grid-column: 1 / -1 !important;
+       grid-row: auto !important;
+     }
+   }
+ }
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;  /* Footer height */
+}
+  
+#footer, #footer a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    color: rgb(112, 112, 112);
+    text-align: left;
+    padding-left: 1.5vw; 
+}
+    
+/* Style the navigation bar and footer elements */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: .5vw;
+    margin-right: .5vw;;
+}
+
+.menu-nav {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.mennav-item, .men-navitems {
+    display: inline-block;
+    padding: 30px 40px;
+}
+
+/* Style the lists by removing the bullets */
+.nav-list, .mennav-list, .menulist {
+    list-style-type: none;
+}
+
+/* Style the navigation list items */
+.nav-list .list-item {
+    display: inline-block;
+    padding: 2vw 1vw;
+}
+
+/* Style the navbar links */
+a {
+    color:  rgb(112, 112, 112);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover, #footer a:hover {
+    color: rgb(104, 0, 0);
+}
+
+.menulist {
+    padding-top: .5vw;
+    padding-bottom: 1.5vw;
+}
+
+.menuitem {
+    color:  rgb(112, 112, 112);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    text-align: center;
+    padding: .3vw;
+}
+/*.activepage a {
+    color:  rgb(104, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+}*/
+
+h1 {
+    color:  rgb(104, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    text-align: center;
+    padding: .5%;
+}
+
+p, .priv-item{
+    color:  rgb(112, 112, 112);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    padding: .5%;
+}
+
+.priv-item {
+    font-style: italic;
+}
+
+iframe {
+    width: 100%;
+    margin: 10px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+}
+  
+.flex-item-left, .flex-item-right {
+    padding: 10px;
+    flex: 50%;
+}
+
+.flex-item-left img {
+    padding: 10px;
+}
+  
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 800px) {
+    .flex-item-right, .flex-item-left {
+      flex: 100%;
+    }
+    .menuitem, #footer, #footer a {
+        font-size: 2.5vw;
+    }
+    h1 {
+        font-size: 4vw;
+    }
+    .list-item a, p, .priv-item {
+        font-size: 3vw;
+    }
+    .mennav-list a, .mennav-item {
+        font-size: 3vw;
+        padding: 6vw 1vw;
+    }
+} 
