@@ -6,27 +6,48 @@
     <title "Test"></title>
     <link rel="stylesheet" href="./styles/teststyle.css">
   </head>
-  <div class="page-wrap">
-    <header class="page-header">
-      <img src="./images/HaukaiLogo.svg" alt="Haukai Restaurant Logo" width="40%;">
-    </header>
-    <nav class="page-nav">
-        <ul class="nav-list">
-          <li class="list-item"><a href="./pages/Menu.html">Menu</a></li>
-          <li class="list-item"><a href="./pages/Reservations.html">Reservations</a></li>
-          <li class="list-item"><a href="./pages/Contacts.html">Contact</a></li>
-          <li class="list-item"><a href="./pages/Staff.html">Staff</a></li>
-        </ul>
-    </nav>
-    <main class="page-main">
-        <picture>
-            <source srcset="./images/HeroPicTall.jpg" alt="Picture of restaurant" width=100% media="(max-width: 600px)">
-            <img src="./images/HeroPicWide.jpg" alt="Picture of a restaurant" width="100%">
-          </picture>
-    </main>
-    <div class="page-footer">
-        Copyright Craig Hutchinson, BIT607 Assignment 2, 2022
-        <a href="./pages/Privacy.html" target="_blank">Our Privacy Policy</a>
+  <body>
+
+    <div class="header">
+      <img src="./images/HaukaiLogo.svg" alt="Haukai Logo" class="center">
     </div>
-  </div>
+    
+    <div class="row">
+      <div class="col-3 menu">
+        <ul>
+        <li>The Flight</li>
+        <li>The City</li>
+        <li>The Island</li>
+        <li>The Food</li>
+        </ul>
+      </div>
+    
+      <div class="col-6">
+        <h1>The City</h1>
+        <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+      </div>
+    
+      <div class="col-3 right">
+        <div class="aside">
+          <h2>What?</h2>
+          <p>Chania is a city on the island of Crete.</p>
+          <h2>Where?</h2>
+          <p>Crete is a Greek island in the Mediterranean Sea.</p>
+          <h2>How?</h2>
+          <p>You can reach Chania airport from all over Europe.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <div class="col-6">
+        <p>Copyright – Craig Hutchinson, BIT607 Assignment 2, 2022</p>
+      </div>
+      <div class="col-6">
+        <p><a href="./pages/Privacy.html" target="_blank">Our Privacy Policy</a></p>
+      </div>
+      
+    </div>
+    
+  </body>
 </html>
