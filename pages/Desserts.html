@@ -8,51 +8,57 @@
   </head>
   
   <body>
-    <div id="page-container">
-      <div id="content-wrap">
-        <!-- I have used the nav HTML semantic element for the navigation menu -->
-        <nav class="navbar">
-          <img src="../images/HaukaiLogo.svg" alt="Haukai Restaurant Logo" width="40%;">
-          <ul class="nav-list">
-            <li class="list-item"><a href="../index.html">Home</a></li>
-            <li class="list-item"><a href="../pages/Reservations.html">Reservations</a></li>
-            <li class="list-item"><a href="../pages/Contacts.html">Contact</a></li>
-            <li class="list-item"><a href="../pages/Staff.html">Staff</a></li>
+    <div class="header">
+    <img src="../images/HaukaiLogo.svg" alt="Haukai Logo" class="center">
+    </div>
+
+    <div class="row">
+        <div class="menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/Reservations.html">Reservations</a></li>
+                <li><a href="../pages/Contacts.html">Contact</a></li>
+                <li><a href="../pages/Staff.html">Staff</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="menu">
+        <nav>
+          <ul class="menunav-list">
+            <li class="mennav-item"><a href="../pages/Menu.html">Beverages</a></li>
+            <li class="mennav-item"><a href="../pages/Appetisers.html">Appetisers</a></li>
+            <li class="mennav-item"><a href="../pages/Mains.html">Mains</a></li>
+            <p class="active">Desserts</p>
           </ul>
         </nav>
+      </div>
+    </div>
 
-        <div class="menu-nav">
-          <nav>
-            <ul class="mennav-list">
-              <li class="mennav-item"><a href="../pages/Menu.html">Beverages</a></li>
-              <li class="mennav-item"><a href="../pages/Appetisers.html">Appetisers</a></li>
-              <li class="mennav-item"><a href="../pages/Mains.html">Mains</a></li>
-              <li class="mennav-item"><a href="../pages/Desserts.html">Desserts</a></li>
-            </ul>
-          </nav>
+    <div class="row">
+      <ul class="col-12 menulist">
+        <li class="menuitem"><h1>Kāpiti Ice Cream 10</h1>
+          Check for daily specials.            
+        </li>
+        <li class="menuitem"><h1>Steam Pudding 12</h1>
+          Golden syrup flavoured steam pudding, served with vanilla ice cream.
+        </li>
+        <li class="menuitem"><h1>Mini Pavlova 16</h1>
+          Mini Pavlova served with kawakawa and lemon infused cream and fresh fruit.
+        </li>
+        <li class="menuitem"><h1>Banofee Pie 16</h1>
+          Toffee, fresh bananas and fresh cream.
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      <div class="col-6">
+        <p><a href="../pages/Privacy.html" target="_blank">Our Privacy Policy</a></p>
         </div>
-
-        <div>
-          <ul class="menulist">
-            <li class="menuitem"><h1>Kāpiti Ice Cream 10</h1>
-              Check for daily specials.            
-            </li>
-            <li class="menuitem"><h1>Steam Pudding 12</h1>
-              Golden syrup flavoured steam pudding, served with vanilla ice cream.
-            </li>
-            <li class="menuitem"><h1>Mini Pavlova 16</h1>
-              Mini Pavlova served with kawakawa and lemon infused cream and fresh fruit.
-            </li>
-            <li class="menuitem"><h1>Banofee Pie 16</h1>
-              Toffee, fresh bananas and fresh cream.
-            </li>
-          </ul>
-        </div>
-
-        <footer id="footer">
-          Copyright Craig Hutchinson, BIT607 Assignment 2, 2022
-          <a href="../pages/Privacy.html" target="_blank">Our Privacy Policy</a>
-        </footer>
+      <div class="col-6">
+        <p>Copyright – Craig Hutchinson, BIT607 Assignment 2, 2022</p>
       </div>
     </div>
   </body>

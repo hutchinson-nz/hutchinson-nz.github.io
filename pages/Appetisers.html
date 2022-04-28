@@ -8,54 +8,60 @@
     </head>
   
     <body>
-        <div id="page-container">
-            <div id="content-wrap">
-                <!-- I have used the nav HTML semantic element for the navigation menu -->
-                <nav class="navbar">
-                    <img src="../images/HaukaiLogo.svg" alt="Haukai Restaurant Logo" width="40%;">
-                    <ul class="nav-list">
-                        <li class="list-item"><a href="../index.html">Home</a></li>
-                        <li class="list-item"><a href="../pages/Reservations.html">Reservations</a></li>
-                        <li class="list-item"><a href="../pages/Contacts.html">Contact</a></li>
-                        <li class="list-item"><a href="../pages/Staff.html">Staff</a></li>
+        <div class="header">
+        <img src="../images/HaukaiLogo.svg" alt="Haukai Logo" class="center">
+        </div>
+    
+        <div class="row">
+            <div class="menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/Reservations.html">Reservations</a></li>
+                    <li><a href="../pages/Contacts.html">Contact</a></li>
+                    <li><a href="../pages/Staff.html">Staff</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="menu">
+                <nav>
+                    <ul class="menunav-list">
+                        <li class="mennav-item"><a href="../pages/Menu.html">Beverages</a></li>
+                        <p class="active">Appetisers</p>
+                        <li class="mennav-item"><a href="../pages/Mains.html">Mains</a>
+                        <li class="mennav-item"><a href="../pages/Desserts.html">Desserts</a></li>
                     </ul>
                 </nav>
-
-                <div class="menu-nav">
-                    <nav>
-                        <ul class="mennav-list">
-                            <li class="mennav-item"><a href="../pages/Menu.html">Beverages</a></li>
-                            <li class="mennav-item"><a href="../pages/Appetisers.html">Appetisers</a></li>
-                            <li class="mennav-item"><a href="../pages/Mains.html">Mains</a></li>
-                            <li class="mennav-item"><a href="../pages/Desserts.html">Desserts</a></li>
-                        </ul>
-                    </nav>
-                </div>
+            </div>
+        </div>
     
-                <div>
-                    <ul class="menulist">
-                        <li class="menuitem"><h1>Rewena Bread 10</h1>
-                            Traditional Māori bread.
-                        </li>
-                        <li class="menuitem"><h1>Paua Fritter 16</h1>
-                            Finely diced pieces of paua, served with a side salad and horopito dressing.
-                        </li>
-                        <li class="menuitem"><h1>Raw Fish 20</h1>
-                            Dried snapper fish marinated in coconut cream, served with tomatoes and spring onions.
-                        </li>
-                        <li class="menuitem"><h1>Poached Salmon 22</h1>
-                            Salmon poached in an orange and pistachio glaze, served with rewena bread.
-                        </li>
-                        <li class="menuitem"><h1>Seafood Basket 25</h1>
-                            Crumbed mussels, salt and pepper squid, crumbed hoki bites and garlic prawns.
-                        </li>
-                    </ul>
-                </div>
+        <div class="row">
+            <ul class="col-12 menulist">
+                <li class="menuitem"><h1>Rewena Bread 10</h1>
+                    Traditional Māori bread.
+                </li>
+                <li class="menuitem"><h1>Paua Fritter 16</h1>
+                    Finely diced pieces of paua, served with a side salad and horopito dressing.
+                </li>
+                <li class="menuitem"><h1>Raw Fish 20</h1>
+                    Dried snapper fish marinated in coconut cream, served with tomatoes and spring onions.
+                </li>
+                <li class="menuitem"><h1>Poached Salmon 22</h1>
+                    Salmon poached in an orange and pistachio glaze, served with rewena bread.
+                </li>
+                <li class="menuitem"><h1>Seafood Basket 25</h1>
+                    Crumbed mussels, salt and pepper squid, crumbed hoki bites and garlic prawns.
+                </li>
+            </ul>
+        </div>
 
-                <footer id="footer">
-                    Copyright Craig Hutchinson, BIT607 Assignment 2, 2022
-                    <a href="../pages/Privacy.html" target="_blank">Our Privacy Policy</a>
-                </footer>
+        <div class="footer">
+            <div class="col-6">
+                <p><a href="../pages/Privacy.html" target="_blank">Our Privacy Policy</a></p>
+            </div>
+            <div class="col-6">
+                <p>Copyright – Craig Hutchinson, BIT607 Assignment 2, 2022</p>
             </div>
         </div>
     </body>
