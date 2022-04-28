@@ -45,13 +45,24 @@ html {
 .menu li a:hover, .footer .col-6 a:hover {
     color: rgb(104, 0, 0);
 }
+h1 {
+    font-size: 2vw;
+    text-align: center;
+    color: rgb(104, 0, 0);
+}
+
+.address {
+    font-size: 1.5vw;
+    color: rgb(112, 112, 112);
+    text-align: center;
+}
   
 .footer .col-6, .footer .col-6 a {
     color: rgb(112, 112, 112);
     text-align: center;
     font-size: 1vw;
     padding: 5px;
-    text-decoration: none
+    text-decoration: nonez
 }
 
 .center {
@@ -59,6 +70,17 @@ html {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+.images {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .5vw;
+}
+
+.social{
+    text-align: center;
 }
   
 /* For desktop: */
@@ -93,5 +115,11 @@ html {
     }
     .menu li a {
         text-decoration: none;
+    }
+    h1 {
+        font-size: 4vw;
+    }
+    .address {
+        font-size: 3vw;
     }
 }
