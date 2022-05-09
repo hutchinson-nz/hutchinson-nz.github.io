@@ -198,4 +198,7 @@ h1 {
     .hero-beverages {
         background-image: url("../images/BeveragesTallBG.jpg");
     }
+    .hero-appetiser {
+        background-image: url("../images/AppetiserTallBG.jpg");
+    }
 }
