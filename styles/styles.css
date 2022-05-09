@@ -103,15 +103,55 @@ h1 {
     color: rgb(104, 0, 0);
 }
 
-.dprice {
+.drinksprice {
     color: rgb(104, 0, 0);
 }
 
 .price {
-    color:rgb(112, 112, 112)
+    color:rgb(0, 0, 0)
 }
 
 .menu {
+    margin-top: 1vw;
+}
+
+.hero-main {
+    background-image: url("../images/MainsBG.jpg");
+    height: 780px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 1vw;
+}
+
+.hero-dessert {
+    background-image: url("../images/DessertBG.jpg");
+    height: 530px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 1vw;
+}
+
+.hero-appetiser {
+    background-image: url("../images/AppetiserBG.jpg");
+    height: 680px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 1vw;
+}
+
+.hero-beverages {
+    background-image: url("../images/BeveragesBG.jpg");
+    height: 850px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
     margin-top: 1vw;
 }
 
@@ -153,5 +193,10 @@ h1 {
     }
     .menu {
         margin: 4vw 0 3vw 0;
+    }
+    /* Swaps out the landscape picture for a portrait one */
+    .hero-beverages {
+        background-image: url("../images/BeveragesTallBG.jpg");
+        height: 1150px;
     }
 }
