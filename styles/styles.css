@@ -197,6 +197,5 @@ h1 {
     /* Swaps out the landscape picture for a portrait one */
     .hero-beverages {
         background-image: url("../images/BeveragesTallBG.jpg");
-        height: 1150px;
     }
 }
