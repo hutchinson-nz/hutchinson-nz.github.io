@@ -198,7 +198,12 @@ h2 {
 .col-12 {
     width: 100%;
 }
-  
+
+@media only screen and (max-width: 1120px) {
+    .menulist {
+        padding: .2vw;
+    }
+}
 /* this sections sets parameters for smaller screens */
 @media only screen and (max-width: 800px) {
     [class*="col-"] {
