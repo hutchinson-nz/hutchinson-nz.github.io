@@ -18,25 +18,27 @@
     
         <!--  This div sets up the main navigation menu -->
         <div class="row">
-            <div class="menu">
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../pages/Reservations.html">Reservations</a></li>
-                    <li><a href="../pages/Contacts.html">Contact</a></li>
-                    <li><a href="../pages/Staff.html">Staff</a></li>
-                </ul>
+            <div class="main-nav">
+                <nav>
+                    <ul class="main-nav-list">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../pages/Reservations.html">Reservations</a></li>
+                        <li><a href="../pages/Contacts.html">Contact</a></li>
+                        <li><a href="../pages/Staff.html">Staff</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
 
         <!--  This div sets up the sub navigation menu. The active page name is coloured different and isn't a link-->
         <div class="row">
-            <div class="menu">
+            <div class="menu-nav">
                 <nav>
-                    <ul class="menunav-list">
-                        <li class="mennav-item"><a href="../pages/Menu.html">Beverages</a></li>
-                        <li class="mennav-item"><a href="../pages/Appetisers.html">Appetisers</a></li>
+                    <ul class="menu-nav-list">
+                        <li class="menu-nav-item"><a href="../pages/Menu.html">Beverages</a></li>
+                        <li class="menu-nav-item"><a href="../pages/Appetisers.html">Appetisers</a></li>
                         <p class="active">Mains</p>
-                        <li class="mennav-item"><a href="../pages/Desserts.html">Desserts</a></li>
+                        <li class="menu-nav-item"><a href="../pages/Desserts.html">Desserts</a></li>
                     </ul>
                 </nav>
             </div>
@@ -47,50 +49,50 @@
             <div class="menu-item">
                 <img src="../images/BeerBatter.jpg" alt="Picture of fish of the day" class="menu-item-image">
                 <div class="menu-item-text">
-                    <h3 class="menu-item-heading">
+                    <h2 class="menu-item-heading">
                         <span class="menu-item-name">Fish of the Day</span>
                         <span class="menu-item-price">25</span>
-                    </h3>    
+                    </h2>    
                     <p class="menu-item-description">Beer battered fish and kumara fries, served with a side salad and homemade tartare.</p>
                 </div>
             </div>
             <div class="menu-item">
                 <img src="../images/MusselsScallops.jpg" alt="Picture of Mussels and Scallops in a bowl" class="menu-item-image">
                 <div class="menu-item-text">
-                    <h3 class="menu-item-heading">
+                    <h2 class="menu-item-heading">
                         <span class="menu-item-name">Mussels and Scallops</span>
                         <span class="menu-item-price">25</span>
-                    </h3>    
+                    </h2>    
                     <p class="menu-item-description">Steamed mussel & scallop mousse, honey and soy broth.</p>
                 </div>
             </div>
             <div class="menu-item">
                 <img src="../images/SeafoodChowder.jpg" alt="Picture of Seafood Chowder" class="menu-item-image">
                 <div class="menu-item-text">
-                    <h3 class="menu-item-heading">
+                    <h2 class="menu-item-heading">
                         <span class="menu-item-name">Seafood Chowder</span>
                         <span class="menu-item-price">30</span>
-                    </h3>    
+                    </h2>    
                     <p class="menu-item-description">Creamy chowder filled with terakihi, prawn, hoki, scallops and mussels, served with flatbread.</p>
                 </div>
             </div>
             <div class="menu-item">
                 <img src="../images/PorkBelly.jpg" alt="Picture of Pork Belly" class="menu-item-image">
                 <div class="menu-item-text">
-                    <h3 class="menu-item-heading">
+                    <h2 class="menu-item-heading">
                         <span class="menu-item-name">Pork Belly</span>
                         <span class="menu-item-price">30</span>
-                    </h3>    
+                    </h2>    
                     <p class="menu-item-description">Slow cooked pork belly served on a bed of apple slaw with roasted kumara, and crispy noodle.</p>
                 </div>
             </div>
             <div class="menu-item">
                 <img src="../images/LambSteaks.jpg" alt="Picture of Lamb Steaks" class="menu-item-image">
                 <div class="menu-item-text">
-                    <h3 class="menu-item-heading">
+                    <h2 class="menu-item-heading">
                         <span class="menu-item-name">Lamb Steak</span>
                         <span class="menu-item-price">33</span>
-                    </h3>    
+                    </h2>    
                     <p class="menu-item-description">New Zealand Lamb coated in a kawakawa crumb, served with Dijon mustard
                         glazed carrots, roasted butternut squash and a mushroom Jus.</p>
                 </div>
@@ -98,10 +100,10 @@
             <div class="menu-item">
                 <img src="../images/Venison.jpg" alt="Picture of Venison on a Plate" class="menu-item-image">
                 <div class="menu-item-text">
-                    <h3 class="menu-item-heading">
+                    <h2 class="menu-item-heading">
                         <span class="menu-item-name">Venison</span>
                         <span class="menu-item-price">33</span>
-                    </h3>    
+                    </h2>    
                     <p class="menu-item-description">Venison crusted with horopito, served with glazed plums, cabbage salad and red wine Jus.</p>
                 </div>
             </div>
@@ -109,10 +111,14 @@
 
         <div class="footer">
             <div class="col-6">
-                <p><a href="../pages/Privacy.html" target="_blank">Our Privacy Policy</a></p>
+                <p class="footer-text">
+                    <a href="../pages/Privacy.html" target="_blank">Our Privacy Policy</a>
+                </p>
             </div>
             <div class="col-6">
-                <p>Copyright – Craig Hutchinson, BIT607 Assignment 2, 2022</p>
+                <p class="footer-text">
+                    Copyright – Craig Hutchinson, BIT607 Assignment 2, 2022
+                </p>
             </div>
         </div>
     </body>

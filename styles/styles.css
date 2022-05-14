@@ -1,80 +1,68 @@
+/* sets the initial box size */
 * {
     box-sizing: border-box;
 }
-  
-.row::after {
-    content: "";
-    clear: both;
-    display: block;
-}
-  
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-}
-  
+
+/* sets the font for the entire page */  
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
-  
+
+/* sets the padding around the logo */
 .header {
-    display: flex;
-    color: #ffffff;
-    padding: 15px;
+    padding: .5em .5em 0 .5em;
 }
   
-.menu ul, .main-menu {
+/* sets the boundary and spacing for the navigation menus */
+.main-nav-list, .menu-nav ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-  
-.menu li, .menu li a {
+ 
+/* sets the font size and spacing for the navigation menus */
+.main-nav-list, .main-nav-list li a, .menu-nav li, .menu-nav li a {
     font-size: 1.5vw;
     padding: 0 8px 0 8px;
-    margin-bottom: 7px;
+    margin-bottom: 1em;
     color: rgb(112, 112, 112);
-}
-
-.menu li a {
     text-decoration: none;
 }
 
-.menu li a:hover, .footer .col-6 a:hover {
+/* sets the hover colour to red */
+.menu-nav li a:hover, .main-nav li a:hover, .footer .col-6 a:hover {
     color: rgb(104, 0, 0);
 }
 
+/* sets the style for the drinks list */
 .menulist {
     list-style: none;
-    padding: 0 2em;
+    padding: 0 5em;
     margin: 0;
 }
 
-/*.menuitem {
-    font-size: 1vw;
-    text-align: left;
-    padding-left: 5em;
-    padding-top: 1vw;
-}*/
-
+/* used for beverages and contact details */
 h1 {
     font-size: 2vw;
     text-align: center;
     color: rgb(104, 0, 0);
 }
 
-h3 {
+/* used for the headings on the other menu pages */
+h2 {
     font-size: 1.5vw;
 }
 
+/* sets the address text details */
 .address {
     font-size: 1.5vw;
     color: rgb(112, 112, 112);
     text-align: center;
 }
-  
+
+/* sets the footer settings */
 .footer .col-6, .footer .col-6 a {
     color: rgb(112, 112, 112);
     text-align: center;
@@ -83,6 +71,12 @@ h3 {
     text-decoration: none
 }
 
+/* sets a margin around the footer text */
+.footer-text {
+    margin: 1em;
+}
+
+/* used to center the logo */
 .center {
     display: block;
     margin-left: auto;
@@ -90,22 +84,27 @@ h3 {
     width: 40%;
 }
 
+/* used to centre the facebook and instagram logos */
 .social{
     text-align: center;
 }
 
+/* sets up the grid layout for the appetiser, main and dessert menus */
 .menu-group {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2em;
     column-gap: 5vw;
     margin-top: 2vw;
-    padding: 2.5em;
+    padding: 2.5em 2.5em 0 2.5em;
 }
+
+/* allows each menu item to be either in one column or two */
 .menu-item {
     display: flex;
 }
 
+/* sets the size of the images next to menu items */
 .menu-item-image {
     width: 150px;
     height: 150px;
@@ -114,6 +113,7 @@ h3 {
     margin-right: 1.5em;
 }
 
+/* allows the menu description text to grow to width of column */
 .menu-item-text {
     flex-grow: 1;
 }
@@ -144,6 +144,7 @@ h3 {
     margin: 0;
 }
 
+/* sets the active menu page name to a static element */
 .active {
     font-size: 1.5vw;
     padding: 0 8px 0 8px;
@@ -151,6 +152,7 @@ h3 {
     color: rgb(104, 0, 0);
 }
 
+/* the below two classes change the price colours for both the drinks and food */
 .drinksprice {
     color: rgb(104, 0, 0);
 }
@@ -159,20 +161,38 @@ h3 {
     color:rgb(0, 0, 0)
 }
 
-.menu {
+/* sets a margin at the top of both nav menus */
+.menu-nav, .main-nav {
     margin-top: 1vw;
 }
 
+/* sets main images width using an id */
 #responsive-image {
     width: 100%;
 }
   
-/* For desktop: */
-.col-6 {width: 50%;}
-.col-12 {width: 100%;}
+/* using the after selector clears the floating elements to avoid any unexpected layout changes*/
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* the following three entries used for the drinks menu to set the column widths */
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.col-6 {
+    width: 50%;
+}
+.col-12 {
+    width: 100%;
+}
   
+/* this sections sets parameters for smaller screens */
 @media only screen and (max-width: 800px) {
-    /* For mobile phones: */
     [class*="col-"] {
       width: 100%;
     }
@@ -182,6 +202,7 @@ h3 {
     }
     .menu-group {
         grid-template-columns: 1fr;
+        padding: 1.5em 1.5em 0 1.5em; 
     }
     .menu-item-image {
         width: 80px;
@@ -191,26 +212,30 @@ h3 {
         font-size: 3vw;
         padding: 0;
     }
-    .menu li a, .active, .address {
+    .footer-text {
+        margin: .5em;
+    }
+    .main-nav li a, .menu-nav li a, .active, .address {
         font-size: 4vw;
     }
-    .menu li a {
+    .main-nav li a, .menu-nav li a {
         text-decoration: none;
     }
     h1 {
         font-size: 5vw;
     }
-    h3 {
+    h2 {
         font-size: 4vw;
+    }
+    .menulist {
+        padding: 0 2em;
     }
     .menuitem {
         font-size: 3vw;
-    }
-    .menuitem {
         text-align: justify;
         margin: 0;
     }
-    .menu {
+    .main-nav, .menu-nav {
         margin: 4vw 0 3vw 0;
     }
 }
