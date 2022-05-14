@@ -39,7 +39,7 @@ html {
 /* sets the style for the drinks list */
 .menulist {
     list-style: none;
-    padding: 0 5em;
+    padding: 0 4em;
     margin: 0;
 }
 
@@ -228,7 +228,7 @@ h2 {
         font-size: 4vw;
     }
     .menulist {
-        padding: 0 2em;
+        padding: 0 1em;
     }
     .menuitem {
         font-size: 3vw;
