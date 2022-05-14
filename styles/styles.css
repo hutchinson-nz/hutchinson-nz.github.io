@@ -25,10 +25,18 @@ html {
 /* sets the font size and spacing for the navigation menus */
 .main-nav-list, .main-nav-list li a, .menu-nav li, .menu-nav li a {
     font-size: 1.5vw;
-    padding: 0 8px 0 8px;
     margin-bottom: 1em;
     color: rgb(112, 112, 112);
     text-decoration: none;
+}
+
+/* below two classes sets a different space between each nav link */
+.main-nav-list, .main-nav-list li a {
+    padding: 0 .9em 0 .9em;
+}
+
+.menu-nav li, .menu-nav li a {
+    padding: 0 .6em 0 .6em;
 }
 
 /* sets the hover colour to red */
@@ -147,8 +155,8 @@ h2 {
 /* sets the active menu page name to a static element */
 .active {
     font-size: 1.5vw;
-    padding: 0 8px 0 8px;
-    margin: 0 0 7px 0;
+    padding: 0 1.2em 0 1.2em;
+    margin: 0 0 1em 0;
     color: rgb(104, 0, 0);
 }
 
@@ -192,7 +200,7 @@ h2 {
 }
   
 /* this sections sets parameters for smaller screens */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
     [class*="col-"] {
       width: 100%;
     }
@@ -215,7 +223,10 @@ h2 {
     .footer-text {
         margin: .5em;
     }
-    .main-nav li a, .menu-nav li a, .active, .address {
+    .main-nav li a, .menu-nav li a, .address, h2 {
+        font-size: 4vw;
+    }
+    .active {
         font-size: 4vw;
     }
     .main-nav li a, .menu-nav li a {
@@ -223,9 +234,6 @@ h2 {
     }
     h1 {
         font-size: 5vw;
-    }
-    h2 {
-        font-size: 4vw;
     }
     .menulist {
         padding: 0 1em;
