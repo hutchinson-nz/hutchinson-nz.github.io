@@ -29,26 +29,40 @@
     <!--  This div sets up a row with two columns. First contains the contact details while the second has an iframe
     that imports a Google map. When the screen size changes the map moves from side by side to vertical.-->
     <div class="row">
-      <div class="col-6 social">
+      <div class="col-6">
         <h1>Opening Hours</h1>
         <p class="address">Wed – Sunday 5.30–11pm</p>
         <h1>Contact Us</h1>
         <p class="address">1 Island Street<br>Kerikeri, Bay of Islands<br>09 4014019</p>
         <h1>Follow Us</h1>
-        <a href="https://www.facebook.com" target="_blank"><img class="images" src="../images/facebook.svg" width="8%" alt="Facebook logo that links to Facebook.com"></a>
-        <a href="https://www.instagram.com" target="_blank"><img class="images" src="../images/instagram.svg" width="8%" alt="Instagram logo that links to Instgram.com"></a>
+        <div class="col-3">
+          <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><img class="images" src="../images/facebook.svg" alt="Facebook logo that links to Facebook.com"></a>
+          </div>
+          <div class="social-icons">
+            <a href="https://www.instagram.com" target="_blank"><img class="images" src="../images/instagram.svg" alt="Instagram logo that links to Instgram.com"></a>
+          </div>
+        </div>
       </div>
-      <div class="col-6"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6518.6755160823395!2d173.95122685583505!3d-35.222961207819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snz!4v1650533730920!5m2!1sen!2snz"
-        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="col-6">
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6815.673250356299!2d173.9551740920255!3d-35.21914270996081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0bb73e31b0728b%3A0x500ef6143a2d500!2sKerikeri!5e0!3m2!1sen!2snz!4v1652648847673!5m2!1sen!2snz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
       </div>
     </div>
  
     <div class="footer">
       <div class="col-6">
-        <p><a href="../pages/Privacy.html" target="_blank">Our Privacy Policy</a></p>
+          <p class="footer-text">
+              <a href="../pages/Privacy.html" target="_blank">Our Privacy Policy</a>
+          </p>
       </div>
       <div class="col-6">
-        <p>Copyright – Craig Hutchinson, BIT607 Assignment 2, 2022</p>
+          <p class="footer-text">
+            Copyright – Craig Hutchinson, BIT607 Assignment 2, 2022
+          </p>
       </div>
     </div>
   </body>
