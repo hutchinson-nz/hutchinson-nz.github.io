@@ -184,15 +184,10 @@ h2 {
 }
 
 /* the following three entries used for the drinks menu to set the column widths. This was based on using 12 columns and dividing by 100% */
-
-.col-3 {
-    display: flex;
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
+.icon .images {
+    width: 10%;
+    display: inline;
 }
-
 .col-6 {
     float: left;
     padding: 15px;
@@ -206,9 +201,6 @@ h2 {
     width: 100%;
 }
 
-.social-icons img {
-    width: 60%;
-}
 .col-6 .map iframe {
     border: none;
     height: 450px;
@@ -284,10 +276,8 @@ h2 {
     .main-nav, .menu-nav {
         margin: 4vw 0 3vw 0;
     }
-    .social-icons img {
-        width: 30%;
+    .icon .images {
+        width: 20%;
+        display: inline;
     }
-    /*.col-3 {
-        padding: 0 5vw 0 5vw;
-    }*/
 }
